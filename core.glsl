@@ -11,7 +11,7 @@ uniform float time;
 uniform vec2 resolution;
 
 float f(float x)
-{ /** you can change the plot function here **/
+{
 	return .3 * sin(x/cos(mod(cos(time)/50.+150.,190./pow(x, 4.))))
 		* cos(x*mod(cos(time)+150.,pow(x, 4.)))
 		* exp(x/mod(cos(time)+150., x*x*x*x*x));
